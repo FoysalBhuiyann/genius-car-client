@@ -11,9 +11,9 @@ const Services = () => {
     return (
         <div>
             <div className='text-center'>
-                <p className="text-2xl font-bold text-orange-600">Services</p>
+                <p className="text-2xl font-bold text-orange-600 mb-6">Services</p>
                 <h2 className="text-5xl font-semibold">Our Service Area</h2>
-                <p>the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which don't look even slightly believable. </p>
+                <p className='my-4'>the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which don't look even slightly believable. </p>
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
@@ -22,6 +22,9 @@ const Services = () => {
                         service={service}
                     ></ServiceCard>)
                 }
+            </div>
+            <div className='text-center mb-10'>
+            <button className="btn btn-outline btn-error">More Services</button>
             </div>
         </div>
     );
